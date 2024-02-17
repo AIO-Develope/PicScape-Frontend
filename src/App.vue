@@ -6,7 +6,7 @@
         <nav>
           <router-link to="/" class="nav-link">Home</router-link>
           <router-link to="/upload" class="nav-link">Upload</router-link>
-          <router-link to="/login" class="nav-link">Login</router-link>
+          <router-link to="/account" class="nav-link">Account</router-link>
         </nav>
       </div>
     </header>
