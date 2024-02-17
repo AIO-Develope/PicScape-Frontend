@@ -142,6 +142,8 @@ export default {
       document.cookie = `uuid=${uuid}; expires=${new Date(Date.now() + 86400e3).toUTCString()}; path=/`;
 
       this.isLoggedIn = true;
+      location.reload();
+
     },
     toggleAuthOption() {
       this.isRegistering = !this.isRegistering;
@@ -183,6 +185,8 @@ export default {
       document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
       document.cookie = 'uuid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
       this.isLoggedIn = false;
+      location.reload();
+
     },
     getCookie(name) {
       const value = `; ${document.cookie}`;
